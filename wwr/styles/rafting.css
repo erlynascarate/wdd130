@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #5EADD5;
+    --secondary-color: #CC9C2B;
+    --accent1-color: #36424E;
+    --accent2-color: #9D9171;
+}
+
+body {
+    font-family: "Dosis", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", serif;
+    color: var(--accent1-color);
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    top: 200px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+}
+
+.sociallinks a {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+}
