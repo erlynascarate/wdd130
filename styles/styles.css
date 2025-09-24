@@ -8,27 +8,46 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
-    background-color: darkblue;
+    background-color: hsl(240 51% 33% / 1);
 }
 
 nav a {
     display: block;
     padding: 20px;
     color: white;
+    text-decoration: none;
 }
 
-main {
+header, .grid, footer {
+    margin: 0 auto;
     max-width: 840px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
 h1 {
-    color: darkblue;
+    border-bottom: 1px solid #000;
+    padding: 1rem;
+    color: hsl(240 51% 33% / 1);
 }
 
 main img {
     float: right;
+    margin: 0.5rem;
     border: var(--black-border);
     padding: 2px;
     width: 150px;
