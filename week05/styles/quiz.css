@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+h1 {
+    margin: 1rem;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+    padding: 2rem;
+    color: #111;
+    background-color: #ddd;
+}
+
+input, textarea, select, button {
+    padding: .75rem
+}
+
+code {
+    display: block;
+    padding: .75rem;
+    color: #fff;
+    background-color: #000;
+}
+
+button {
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: navy;
+}
