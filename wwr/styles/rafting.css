@@ -76,7 +76,7 @@ header a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -155,4 +155,67 @@ footer p {
 .socialmedia a {
     width: 40px;
     text-decoration: none;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 16px;
+}
+
+.info h1, .info > p {
+    grid-column: 1 / -1;
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+}
+
+.info > p {
+    text-align: center;
+}
+
+.info iframe {
+    border: 0;
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(9, auto);
+    align-items: center;
+}
+
+input, textarea, button {
+    padding: .5rem;
+}
+
+form p {
+    grid-row: 3 / 6;
+}
+
+label[for="message"], textarea, label[for="subscribe"], button {
+    grid-column: 1 / -1;
+}
+
+form button {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button:hover {
+    background-color: #ccc;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.employees h2 {
+    grid-column: 1 / -1;
 }
